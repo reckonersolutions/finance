@@ -10,7 +10,15 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
+<<<<<<< HEAD
     expect(page.getTitleText()).toEqual('finance app is running!');
+=======
+<<<<<<< HEAD
+    expect(page.getTitleText()).toEqual('finance app is running!');
+=======
+    expect(page.getTitleText()).toEqual('dashboard050620 app is running!');
+>>>>>>> 8a9d80c44bb2d048c60587e169a08a1dd079a5df
+>>>>>>> a66e71ac5d35bdcb9563aa230928325c1f232f93
   });
 
   afterEach(async () => {

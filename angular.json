@@ -121,6 +121,10 @@
           "configurations": {
             "production": {
               "devServerTarget": "finance:serve:production"
+<<<<<<< HEAD
+=======
+
+>>>>>>> a66e71ac5d35bdcb9563aa230928325c1f232f93
             }
           }
         }
