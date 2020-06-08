@@ -2,5 +2,17 @@
 
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    html {
+      transform: rotate(90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+  }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

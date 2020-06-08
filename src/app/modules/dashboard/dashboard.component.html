@@ -1,22 +1,39 @@
 
-<div class="w3-row">
-  <mat-card class="w3-quarter">
-      <app-widget-card label="New Users" total="12k" percentage="50" [data]="cards"></app-widget-card>
-  </mat-card>
-  <mat-card class="w3-quarter">
-      <app-widget-card label="Users Retention" total="10k" percentage="40" [data]="cards"></app-widget-card>
-  </mat-card>
-  <mat-card class="w3-quarter">
-      <app-widget-card label="Users Engagement" total="8k" percentage="30" [data]="cards"></app-widget-card>
-  </mat-card>
-  <mat-card class="w3-quarter">
-      <app-widget-card label="Referral" total="6k" percentage="20" [data]="cards"></app-widget-card>
-  </mat-card>
+<div class="w3-row-padding">
+  <div class="w3-col l3 m6">
+    <mat-card style="height:150px; background-color:#FF6F61;">
+      <br>
+      <p style="font-size:3em; color:white;">1,189,417.73</p>
+      <br>
+      <p style="font-size:2em; color:white;">Assets</p>
+    </mat-card>
+  </div>
+  <div class="w3-col l3 m6">
+    <mat-card style="height:150px; background-color:#82b74b">
+      <br>
+      <p style="font-size:3em; color:white;">934,521.47</p>
+      <br>
+      <p style="font-size:2em; color:white;">Liabilities</p>
+    </mat-card>
+  </div>
+  <div class="w3-col l3 m6">
+    <mat-card style="height:150px; background-color:#92a8d1">
+      <br>
+      <p style="font-size:3em; color:white;">245,896.26</p>
+      <br>
+      <p style="font-size:2em; color:white;">Net Profit</p>
+    </mat-card>
+  </div>
+  <div class="w3-col l3 m6">
+    <mat-card>
+      <app-widget-card label="Sales" total="5.90 M" percentage="95" [data]="cards"></app-widget-card>
+    </mat-card>
+  </div>
 </div>
 
 <br>
 
-<div>
+<div class="w3-container">
  <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
 
@@ -26,6 +43,9 @@
 
 <div class="w3-row">
     <div class="w3-half">
+      <div style="height:40px; width:100%; background-color: #92a8d1;">
+        <h3 style="padding:10px;">PDC Receivables</h3>
+      </div>
         <div class="mat-elevation-z8">
             <table mat-table [dataSource]="dataSource">
           
