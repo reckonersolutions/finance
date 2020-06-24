@@ -1,0 +1,96 @@
+<jqxMenu #menuReference [width]="getWidth()" [height]="38">
+  <ul>
+    <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/Account24.png' /><a (click)="onShowButton()">Accounts</a></li>
+    <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/Folder24.png' /><a (click)="onShowButton()">Groups</a></li>
+    <li><a href="#Home">Journal Voucher</a></li>
+    <li>
+      Cash And Bank
+      <ul style="width: 250px;">
+        <li><a href="#Education">Receipt</a></li>
+        <li><a href="#Financial">Payment</a></li>
+        <li type="separator"></li>
+        <li><a href="#Financial">Contra Entry</a></li>
+        <li type="separator"></li>
+        <li><a href="#Government">Bank Credit Note</a></li>
+        <li><a href="#Manufacturing">Bank Debit Note</a></li>         
+      </ul>
+    </li>
+    <li>
+      Purchase
+      <ul>
+        <li><a href="#PCProducts">Purchase Bill</a></li>
+        <li><a href="#MobileProducts">Debit Note</a></li>
+      </ul>
+    </li>
+    <li>
+      Sales
+      <ul>
+        <li><a href="#PCProducts">Invoice</a></li>
+        <li><a href="#MobileProducts">Credit Note</a></li>
+      </ul>
+    </li>
+    <li>
+      Post Dated Cheques
+      <ul style="width: 200px;">
+        <li><a href="#SupportHome">PDC Deposit</a></li>
+        <li><a href="#CustomerService">PDC Maturity</a></li>
+      </ul>
+    </li>
+    <li>
+      Opening Balances
+      <ul style="width: 200px;">
+        <li><a href="#Designers">Opening Balance</a></li>
+        <li><a href="#Developers">Opening Balance - PDP</a></li>
+        <li><a href="#Educators">Opening Balance - PDR</a></li>
+      </ul>
+    </li>
+    <li>
+      Reports
+      <ul style="width: 180px;">
+        <li><a href="#About">Trial Balance</a></li>
+        <li><a href="#Press">Profit And Loss</a></li>
+        <li><a href="#Investor">PNL Monthly</a></li>
+        <li><a href="#CorporateAffairs">Balance Sheet</a></li>
+        <li><a href="#Careers">Ledger</a></li>
+        <li><a href="#Showcase">Ledger Summary</a></li>
+        <li><a href="#Events">Transaction List</a></li>          
+        <li type="separator"></li>
+        <li>
+          Debtors
+          <ul style="width: 200px;">
+            <li><a href="#Labs">Sales Register</a></li>
+            <li type="separator"></li>
+            <li><a href="#TV">Outstanding Summary</a></li>
+            <li><a href="#Forums">Outstanding Details</a></li>
+            <li><a href="#Exchange">Ageing Summary</a></li>
+            <li><a href="#Blogs">Ageing Details</a></li>
+          </ul>
+        </li>
+        <li type="separator"></li>
+        <li>
+          Creditors
+          <ul style="width: 200px;">
+            <li><a href="#Labs">Purchase Register</a></li>
+            <li type="separator"></li>
+            <li><a href="#TV">Outstanding Summary</a></li>
+            <li><a href="#Forums">Outstanding Details</a></li>
+            <li><a href="#Exchange">Ageing Summary</a></li>
+            <li><a href="#Blogs">Ageing Details</a></li>
+          </ul>
+        </li>
+        <li type="separator"></li>
+        <li><a href="#ContactUs">Cash Book</a></li>
+        <li><a href="#Become an affiliate">PDR Listing</a></li>
+        <li><a href="#ContactUs">PDP Listing</a></li>
+        <li><a href="#Become an affiliate">VAT Report</a></li>
+      </ul> 
+      
+    </li>
+  </ul>
+</jqxMenu>   
+
+<br>
+
+<div>
+  <app-forms-accounts></app-forms-accounts>
+</div>

@@ -1,0 +1,14 @@
+<jqxWindow #windowReference
+            [width]="500" [height]="height" [autoOpen]="true">
+            <div>
+                Accounts
+            </div>
+            <div style='overflow: hidden;' id='windowContent'>
+                <jqxButton #hideWindowButton
+                    style="float: left; margin-left: 3px;"
+                    (onClick)="closeWindow()"
+                    [width]="80">
+                    <span>Close</span>
+                </jqxButton>
+            </div>
+</jqxWindow>

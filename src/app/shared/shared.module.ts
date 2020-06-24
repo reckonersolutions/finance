@@ -15,6 +15,7 @@ import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
+import { jqxMenuModule } from 'jqwidgets-ng/jqxmenu';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { PieComponent } from './widgets/pie/pie.component';
     MatButtonModule,
     MatMenuModule,
     MatListModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    jqxMenuModule
+    
   ],
   exports: [
     HeaderComponent,
