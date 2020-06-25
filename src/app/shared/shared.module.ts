@@ -17,6 +17,8 @@ import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { jqxMenuModule } from 'jqwidgets-ng/jqxmenu';
 
+import { FinanceModule } from './../finance/finance.module';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -37,7 +39,8 @@ import { jqxMenuModule } from 'jqwidgets-ng/jqxmenu';
     MatMenuModule,
     MatListModule,
     HighchartsChartModule,
-    jqxMenuModule
+    jqxMenuModule,
+    FinanceModule
     
   ],
   exports: [

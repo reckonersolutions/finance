@@ -16,3 +16,22 @@ git push -u origin master
 …or import code from another repository
 
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+git pull origin master
+
+
+I had the same problem as you.
+
+I did git status git fetch git pull, but my branch was still behind to origin. I had folders and files pushed to remote and I saw the files on the web, but on my local they were missing.
+
+Finally, these commands updated all the files and folders on my local:
+
+git fetch --all
+git reset --hard origin/master 
+
+or if you want a branch
+
+git checkout your_branch_name_here
+git reset --hard origin/your_branch_name_here
+

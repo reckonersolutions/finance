@@ -2,20 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccountsComponent } from './forms/accounts/accounts.component';
 import { jqxWindowModule } from 'jqwidgets-ng/jqxwindow';
+import { jqxMenuModule} from 'jqwidgets-ng/jqxmenu';
 import { jqxButtonModule } from 'jqwidgets-ng/jqxbuttons';
+import { FinancedashboardComponent } from './financedashboard/financedashboard.component';
 
 
 
 @NgModule({
   declarations: [
-    AccountsComponent
+    AccountsComponent,
+    FinancedashboardComponent
   ],
   imports: [
     CommonModule,
     jqxWindowModule,
-    jqxButtonModule
+    jqxButtonModule,
+    jqxWindowModule,
+    jqxMenuModule
   ],
   exports: [
+    FinancedashboardComponent,
     AccountsComponent
   ]
 })
