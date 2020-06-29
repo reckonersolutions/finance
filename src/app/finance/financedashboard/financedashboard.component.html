@@ -1,15 +1,15 @@
   <jqxWindow #windowReference
   [width]="'95%'" [height]="'85%'" [maxWidth]="getMaxWidth()" [maxHeight]="getMaxHeight()" [autoOpen]="true" [showCollapseButton]="false">
   <div>
-      <span>Finance</span>
+    <img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/finance.svg' alt="Finance" width="20" /><span>Finance</span>
       
   </div>
   <div style='overflow: hidden;' id='windowConten'>
     <div>
-      <jqxMenu #menuReference [width]="getMenuWidth()" [height]="38">
+      <jqxMenu #menuReference [width]="getMenuWidth()" [height]="35">
         <ul>
-          <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/account.svg' alt="Accounts" width="25" /><a (click)="onShowButton()">Accounts</a></li>
-          <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/Folder24.png' /><a (click)="onShowButton()">Groups</a></li>
+          <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/account.svg' alt="Accounts" width="20" /><a (click)="onShowButton()">Accounts</a></li>
+          <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/group.svg' alt="Groups" width="20" /><a (click)="onShowButton()">Groups</a></li>
           <li><a href="#Home">Journal Voucher</a></li>
           <li>
             Cash And Bank
@@ -93,7 +93,7 @@
               <li><a href="#Become an affiliate">VAT Report</a></li>
             </ul>                         
           </li>
-          <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/Close24.png' /><a (click)="closeWindow()">Close</a></li>
+          <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/exit.svg' alt="Exit" width="20" /><a (click)="closeWindow()">Close</a></li>
         </ul>
       </jqxMenu>  
     </div>
