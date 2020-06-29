@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef, OnInit, AfterViewInit } from '@angular/core';
 import { jqxWindowComponent } from 'jqwidgets-ng/jqxwindow';
 import { jqxButtonComponent } from 'jqwidgets-ng/jqxbuttons';
+import { jqxInputComponent } from 'jqwidgets-ng/jqxinput';
 
 @Component({
   selector: 'app-forms-accounts',
@@ -17,6 +18,10 @@ export class AccountsComponent implements OnInit,AfterViewInit {
   height: number | string = 600;
   layout: any[] = this.generateLayout();
 
+  Change(event: any): void {
+        console.log(event.code);    
+  }
+
   getLayoutWidth() : any {
 		if (document.body.offsetWidth < 800) {
 			return '90%';
@@ -26,15 +31,18 @@ export class AccountsComponent implements OnInit,AfterViewInit {
 	}
 
   generateLayout(): any[] {
-    let layout = [
+    let layout = 
+    [
       {
         type: 'layoutGroup',
         orientation: 'horizontal',
-        items: [
+        items: 
+        [
           {
             type: 'documentGroup',
             width: 700,
-            items:[
+            items:
+            [
               {
                 type: 'documentPanel',
                 title: 'General',
@@ -48,7 +56,7 @@ export class AccountsComponent implements OnInit,AfterViewInit {
               {
                 type: 'documentPanel',
                 title: 'Bank Details',
-                contentContainer: 'Document2Panel'
+                contentContainer: 'Document3Panel'
               }
             ]
           },
@@ -56,6 +64,7 @@ export class AccountsComponent implements OnInit,AfterViewInit {
             type: 'autoHideGroup',
             alignment: 'right',
             width: 100,
+            allowClose: false,
             unpinnedWidth: 700,
             items:[
               {

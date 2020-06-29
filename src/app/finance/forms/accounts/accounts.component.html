@@ -3,20 +3,35 @@
             <div>
                 <img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/account.svg' alt="Accounts" width="20" /><span>Accounts</span>
             </div>
-            <div style='overflow: hidden;' id='windowContent'>
+            <div style='overflow: hidden;' id='windowContent'>  
+
+                <div>
+                    <jqxButton #button [width]='120' [height]='25'>
+                        Button
+                    </jqxButton>
+                <jqxInput 
+                    [width]="400" [height]="25" 
+                    [minLength]="1" [placeHolder]="'Enter a Country'" (keydown)="Change($event)">
+                </jqxInput>
+                </div>
+
                 <div style="height: '100%';">                   
                     <jqxMenu #menuReference [width]="getMenuWidth()" [height]="35">
                         <ul>
-                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/group.svg' alt="Group" width="20" /><a (click)="closeWindow()">Groups</a></li>
-                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/delete.svg' alt="Delete" width="15" /><a href="#Home">Delete</a></li>
-                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/exit.svg' alt="Exit" width="20" /><a (click)="closeWindow()">Close</a></li>
-                        </ul>
+                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/save.svg' alt="Group" width="20" /><a (click)="closeWindow()">Save</a></li>
+                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/reset.svg' alt="Delete" width="20" /><a href="#Home">Reset</a></li>                            
+                            <ul style="float: right;">
+                                <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/group.svg' alt="Group" width="20" /><a (click)="closeWindow()">Groups</a></li>
+                                <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/delete.svg' alt="Delete" width="15" /><a href="#Home">Delete</a></li>
+                                <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/exit.svg' alt="Exit" width="20" /><a (click)="closeWindow()">Close</a></li>                            
+                            </ul>   
+                        </ul>                                                                                                 
                     </jqxMenu>
-                    <jqxDockingLayout #dockingLayoutReference [width]="'100%'" [height]="'93%'" [layout]="layout">
+                    <jqxDockingLayout #dockingLayoutReference [width]="'100%'" [height]="'94%'" [layout]="layout">
 
                         <!--documentGroup-->
                             <div data-container="Document1Panel">
-                                
+                                                                                            
                                 
                             </div>
                             <div data-container="Document2Panel">
@@ -24,11 +39,12 @@
                             </div>
                             <div data-container="Document3Panel">
                                 
-                            </div>
+                            </div>   
+                                                       
                             
                             <!--right tabbedGroup-->
                             <div data-container="ChartPanel">
-                                
+                               
                             </div>
                             <div data-container="VATPanel">
                                 
@@ -37,7 +53,7 @@
                                 
                             </div>
                               
-                    </jqxDockingLayout>
-                </div>                
+                    </jqxDockingLayout>                    
+                </div>                             
             </div>
 </jqxWindow>

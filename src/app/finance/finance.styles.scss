@@ -5,18 +5,12 @@
 
 /*applied to the window’s content*/
 .jqx-window-content {
-    outline: none;
-    overflow: auto;
-    text-align: left;
-    background-color: transparent;
+    
     padding: 0px;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
+    
 }
 /*applied to the window’s content when the window is disabled*/
 .jqx-window-content-disabled {
-    outline: none;
-    overflow: auto;
-    text-align: left;
+    
     padding: 0px;
 }
