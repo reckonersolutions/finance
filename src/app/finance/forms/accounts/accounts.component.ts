@@ -37,29 +37,7 @@ export class AccountsComponent implements OnInit,AfterViewInit {
         type: 'layoutGroup',
         orientation: 'horizontal',
         items: 
-        [
-          {
-            type: 'documentGroup',
-            width: 700,
-            items:
-            [
-              {
-                type: 'documentPanel',
-                title: 'General',
-                contentContainer: 'Document1Panel'
-              },
-              {
-                type: 'documentPanel',
-                title: 'Duties & Taxes',
-                contentContainer: 'Document2Panel'
-              },
-              {
-                type: 'documentPanel',
-                title: 'Bank Details',
-                contentContainer: 'Document3Panel'
-              }
-            ]
-          },
+        [                                
           {
             type: 'autoHideGroup',
             alignment: 'right',

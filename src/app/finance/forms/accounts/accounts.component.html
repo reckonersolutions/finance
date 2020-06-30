@@ -1,20 +1,9 @@
 <jqxWindow #windowReference
-            [width]="800" [height]="height" [autoOpen]="true" [isModal]="false">
+            [width]="800" [height]="height"  [autoOpen]="true" [isModal]="false" [resizable]="false">
             <div>
                 <img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/account.svg' alt="Accounts" width="20" /><span>Accounts</span>
             </div>
-            <div style='overflow: hidden;' id='windowContent'>  
-
-                <div>
-                    <jqxButton #button [width]='120' [height]='25'>
-                        Button
-                    </jqxButton>
-                <jqxInput 
-                    [width]="400" [height]="25" 
-                    [minLength]="1" [placeHolder]="'Enter a Country'" (keydown)="Change($event)">
-                </jqxInput>
-                </div>
-
+            <div style='overflow: hidden;' id='windowContent'>            
                 <div style="height: '100%';">                   
                     <jqxMenu #menuReference [width]="getMenuWidth()" [height]="35">
                         <ul>
@@ -27,33 +16,29 @@
                             </ul>   
                         </ul>                                                                                                 
                     </jqxMenu>
-                    <jqxDockingLayout #dockingLayoutReference [width]="'100%'" [height]="'94%'" [layout]="layout">
+                    <div style="display: grid; grid-template-columns: auto 100px; height: 528px; ">
+                        <div style="border: 1px solid red;">
 
-                        <!--documentGroup-->
-                            <div data-container="Document1Panel">
-                                                                                            
-                                
-                            </div>
-                            <div data-container="Document2Panel">
-                                
-                            </div>
-                            <div data-container="Document3Panel">
-                                
-                            </div>   
-                                                       
-                            
-                            <!--right tabbedGroup-->
-                            <div data-container="ChartPanel">
-                               
-                            </div>
-                            <div data-container="VATPanel">
-                                
-                            </div>
-                            <div data-container="HelpPanel" >
-                                
-                            </div>
-                              
-                    </jqxDockingLayout>                    
+                        </div>
+                        <div>
+                            <jqxDockingLayout #dockingLayoutReference style="float: right;" [width]="100" [height]="'100%'" [layout]="layout">
+                        
+                                <!--right tabbedGroup-->
+                                <div data-container="ChartPanel">
+                                   
+                                </div>
+                                <div data-container="VATPanel">
+                                    
+                                </div>
+                                <div data-container="HelpPanel" >
+                                    
+                                </div>
+                                  
+                            </jqxDockingLayout>   
+                        </div>
+
+                    </div>
+                     
                 </div>                             
             </div>
 </jqxWindow>
