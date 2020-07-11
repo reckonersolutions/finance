@@ -7,21 +7,248 @@
                 <div style="height: '100%';">                   
                     <jqxMenu #menuReference [width]="getMenuWidth()" [height]="35">
                         <ul>
-                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/save.svg' alt="Group" width="20" /><a (click)="closeWindow()">Save</a></li>
-                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/reset.svg' alt="Delete" width="20" /><a href="#Home">Reset</a></li>                            
-                            <ul style="float: right;">
-                                <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/group.svg' alt="Group" width="20" /><a (click)="closeWindow()">Groups</a></li>
-                                <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/delete.svg' alt="Delete" width="15" /><a href="#Home">Delete</a></li>
-                                <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/exit.svg' alt="Exit" width="20" /><a (click)="closeWindow()">Close</a></li>                            
-                            </ul>   
+                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/group.svg' alt="Group" width="20" /><a (click)="closeWindow()">Groups</a></li>
+                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/delete.svg' alt="Delete" width="15" /><a href="#Home">Delete</a></li>
+                            <li><img style='float: left; margin-right: 5px;' src='./../../../../assets/images/functional/exit.svg' alt="Exit" width="20" /><a (click)="closeWindow()">Close</a></li>                              
                         </ul>                                                                                                 
-                    </jqxMenu>
-                    <div style="display: grid; grid-template-columns: auto 100px; height: 528px; ">
-                        <div style="border: 1px solid red;">
-
+                    </jqxMenu>                                   
+                    <div style="display: grid; grid-template-columns: auto 100px;">
+                        <div>
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td colspan="3">
+                                            <span class="compulsory-indicator">* &nbsp;</span>
+                                            <jqxInput 
+                                                [width]="300" [height]="25" [source]="" [minLength]="1" [placeHolder]="'Account Name'">
+                                            </jqxInput>
+                                        </td>                                            
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <span class="compulsory-indicator">* &nbsp;</span>
+                                            <jqxInput 
+                                                [width]="300" [height]="25" [source]="" [minLength]="1" [placeHolder]="'Group'">
+                                            </jqxInput>
+                                        </td>                                            
+                                    </tr>  
+                                    <tr>
+                                        <td colspan="3">
+                                            <jqxTabs #tabsReference
+                                            [width]='700' [height]='415' [position]='"top"' [animationType]='"none"' [selectionTracker]='false'>
+                                            <ul>
+                                                <li style="margin-left: 30px;">General</li>
+                                                <li>Duties & Taxes</li>
+                                                <li>Bank Details</li>                                                    
+                                              </ul>                                                                                                   
+                                              <div class="container">
+                                                  <div class="panel">
+                                                  <table>                                                          
+                                                      <tr>
+                                                        <td style="width: 12em;">Street:</td>
+                                                        <td>
+                                                            <jqxInput 
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            </jqxInput>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>City:</td>
+                                                        <td>
+                                                            <jqxInput 
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            </jqxInput>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Country:</td>
+                                                        <td>
+                                                            <jqxInput 
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            </jqxInput>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Telephone:</td>
+                                                        <td>
+                                                            <jqxInput 
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            </jqxInput>
+                                                        </td>
+                                                      </tr>                                                          
+                                                      <tr>
+                                                        <td>Fax:</td>
+                                                        <td>
+                                                            <jqxInput 
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            </jqxInput>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Email:</td>
+                                                        <td>
+                                                            <jqxInput 
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            </jqxInput>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Website:</td>
+                                                        <td>
+                                                            <jqxInput 
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            </jqxInput>
+                                                        </td>
+                                                      </tr>
+                                                      </table>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <tr>
+                                                                <td style="width: 12em;">Payment Mode:</td>
+                                                                <td>
+                                                                    <jqxInput 
+                                                                        [width]="150" [height]="25" [source]="" [minLength]="1">
+                                                                    </jqxInput>
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 12em;">Credit Limit:</td>
+                                                                <td>
+                                                                    <jqxInput 
+                                                                        [width]="150" [height]="25" [source]="" [minLength]="1">
+                                                                    </jqxInput>
+                                                                </td>
+                                                                <td style="width: 12em;">Credit Days:</td>
+                                                                <td>
+                                                                    <jqxInput 
+                                                                        [width]="150" [height]="25" [source]="" [minLength]="1">
+                                                                    </jqxInput>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <tr>
+                                                                <td style="width: 12em;">Allocation Required:</td>
+                                                                <td>
+                                                                    <jqxInput 
+                                                                        [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                    </jqxInput>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>                                                   
+                                              </div>
+                                              <div class="container">
+                                                <div class="panel">                                                        
+                                                    <table>
+                                                        <tr>
+                                                            <td style="width: 5em;">Tax No.:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                    </table>
+                                                </div>
+                                              </div>
+                                              <div class="container">
+                                                <div class="panel">
+                                                    <table>
+                                                        <tr>
+                                                            <td style="width: 12em;">Account Name:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Account No.:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>IBAN No.:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Bank Name:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="panel">
+                                                    <table>
+                                                        <tr>
+                                                            <td style="width: 12em;">Branch:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Swift Code:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>IFSC Code:</td>
+                                                            <td>
+                                                                <jqxInput 
+                                                                [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                                </jqxInput>
+                                                            </td>
+                                                          </tr>
+                                                    </table>
+                                                </div>
+                                                
+                                              </div>
+                                            </jqxTabs>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: auto;"></td>
+                                        <td style="width: 5em;">
+                                            <jqxButton #button1 [width]='120' [height]='30' [textImageRelation]='"imageBeforeText"' 
+                                                                [textPosition]='"left"' [imgSrc]='"./../../../../assets/images/functional/save.svg"'
+                                                                [imgWidth]="20" [imgHeight]="20">
+                                                Save
+                                            </jqxButton>
+                                        </td>
+                                        <td style="width: 5em;">
+                                            <jqxButton #button1 [width]='120' [height]='30' [textImageRelation]='"imageBeforeText"' 
+                                                                [textPosition]='"left"' [imgSrc]='"./../../../../assets/images/functional/reset.svg"'
+                                                                [imgWidth]="20" [imgHeight]="20">
+                                                Reset
+                                            </jqxButton>
+                                        </td>
+                                    </tr>                                                                    
+                                </table>
+                            </form> 
                         </div>
                         <div>
-                            <jqxDockingLayout #dockingLayoutReference style="float: right;" [width]="100" [height]="'100%'" [layout]="layout">
+                            <jqxDockingLayout #dockingLayoutReference style="float: right;" [width]="100" [height]='528' [layout]="layout">
                         
                                 <!--right tabbedGroup-->
                                 <div data-container="ChartPanel">
@@ -34,11 +261,9 @@
                                     
                                 </div>
                                   
-                            </jqxDockingLayout>   
+                            </jqxDockingLayout> 
                         </div>
-
                     </div>
-                     
                 </div>                             
             </div>
 </jqxWindow>

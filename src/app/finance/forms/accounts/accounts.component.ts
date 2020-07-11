@@ -11,7 +11,7 @@ import { jqxInputComponent } from 'jqwidgets-ng/jqxinput';
     './../../finance.styles.scss'   
   ]
 })
-export class AccountsComponent implements OnInit,AfterViewInit {
+export class AccountsComponent implements OnInit, AfterViewInit {
 
   @ViewChild('windowReference') window: jqxWindowComponent;
 
@@ -43,7 +43,7 @@ export class AccountsComponent implements OnInit,AfterViewInit {
             alignment: 'right',
             width: 100,
             allowClose: false,
-            unpinnedWidth: 700,
+            unpinnedWidth: 700,            
             items:[
               {
                 type: 'layoutPanel',
