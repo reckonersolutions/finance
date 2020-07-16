@@ -35,7 +35,7 @@
                                     <tr>
                                         <td colspan="3">
                                             <jqxTabs #tabsReference
-                                            [width]='700' [height]='415' [position]='"top"' [animationType]='"none"' [selectionTracker]='false'>
+                                            [width]='700' [height]='420' [position]='"top"' [animationType]='"none"' [selectionTracker]='false'>
                                             <ul>
                                                 <li style="margin-left: 30px;">General</li>
                                                 <li>Duties & Taxes</li>
@@ -45,7 +45,7 @@
                                                   <div class="panel">
                                                   <table>                                                          
                                                       <tr>
-                                                        <td style="width: 12em;">Street:</td>
+                                                        <td style="width: 160px;">Street:</td>
                                                         <td>
                                                             <jqxInput 
                                                             [width]="300" [height]="25" [source]="" [minLength]="1">
@@ -56,7 +56,7 @@
                                                         <td>City:</td>
                                                         <td>
                                                             <jqxInput 
-                                                            [width]="300" [height]="25" [source]="" [minLength]="1">
+                                                            [width]="300" [height]="25" [source]="" [minLength]="1" [theme]="'black'">
                                                             </jqxInput>
                                                         </td>
                                                       </tr>
@@ -105,27 +105,27 @@
                                                     <div class="panel">
                                                         <table>
                                                             <tr>
-                                                                <td style="width: 12em;">Payment Mode:</td>
+                                                                <td style="width: 160px;">Payment Mode:</td>
                                                                 <td>
-                                                                    <jqxInput 
-                                                                        [width]="150" [height]="25" [source]="" [minLength]="1">
-                                                                    </jqxInput>
+                                                                    <jqxDropDownList 
+                                                                        [width]="200" [height]="25" [source]="['Cash','Credit']" [selectedIndex]="1">
+                                                                    </jqxDropDownList>
                                                                 </td>
                                                                 <td></td>
                                                                 <td></td>
                                                             </tr>
                                                             <tr>
-                                                                <td style="width: 12em;">Credit Limit:</td>
+                                                                <td style="width: 160px;">Credit Limit:</td>
                                                                 <td>
-                                                                    <jqxInput 
-                                                                        [width]="150" [height]="25" [source]="" [minLength]="1">
-                                                                    </jqxInput>
+                                                                    <jqxNumberInput
+                                                                        [width]="150" [height]="25" [symbol]="'AED'" [spinButtons]="false">
+                                                                    </jqxNumberInput>
                                                                 </td>
-                                                                <td style="width: 12em;">Credit Days:</td>
+                                                                <td style="width: 160px;">Credit Days:</td>
                                                                 <td>
-                                                                    <jqxInput 
-                                                                        [width]="150" [height]="25" [source]="" [minLength]="1">
-                                                                    </jqxInput>
+                                                                    <jqxNumberInput #numericInput
+                                                                        [width]="150" [height]="25" [spinButtons]="false" [digits]="3" [decimalDigits]="0">
+                                                                    </jqxNumberInput>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -133,11 +133,11 @@
                                                     <div class="panel">
                                                         <table>
                                                             <tr>
-                                                                <td style="width: 12em;">Allocation Required:</td>
+                                                                <td style="width: 160px;">Allocation Required:</td>
                                                                 <td>
-                                                                    <jqxInput 
-                                                                        [width]="300" [height]="25" [source]="" [minLength]="1">
-                                                                    </jqxInput>
+                                                                    <jqxDropDownList 
+                                                                        [width]="200" [height]="25" [source]="['Yes','No']" [selectedIndex]="0">
+                                                                    </jqxDropDownList>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -161,7 +161,7 @@
                                                 <div class="panel">
                                                     <table>
                                                         <tr>
-                                                            <td style="width: 12em;">Account Name:</td>
+                                                            <td style="width: 160px;">Account Name:</td>
                                                             <td>
                                                                 <jqxInput 
                                                                 [width]="300" [height]="25" [source]="" [minLength]="1">
@@ -197,7 +197,7 @@
                                                 <div class="panel">
                                                     <table>
                                                         <tr>
-                                                            <td style="width: 12em;">Branch:</td>
+                                                            <td style="width: 160px;">Branch:</td>
                                                             <td>
                                                                 <jqxInput 
                                                                 [width]="300" [height]="25" [source]="" [minLength]="1">

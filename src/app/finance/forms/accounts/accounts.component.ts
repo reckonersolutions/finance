@@ -8,7 +8,7 @@ import { jqxInputComponent } from 'jqwidgets-ng/jqxinput';
   templateUrl: './accounts.component.html',
   styleUrls: [
     './accounts.component.scss',
-    './../../finance.styles.scss'   
+    './../../finance.styles.scss'
   ]
 })
 export class AccountsComponent implements OnInit, AfterViewInit {

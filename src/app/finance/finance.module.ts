@@ -8,6 +8,8 @@ import { jqxDockingLayoutModule } from 'jqwidgets-ng/jqxdockinglayout';
 import { jqxInputModule } from 'jqwidgets-ng/jqxinput';
 import { jqxTabsModule } from 'jqwidgets-ng/jqxtabs';
 import { jqxComboBoxModule } from 'jqwidgets-ng/jqxcombobox';
+import { jqxNumberInputModule } from 'jqwidgets-ng/jqxnumberinput';
+import { jqxDropDownListModule } from 'jqwidgets-ng/jqxdropdownlist';
 import { FinancedashboardComponent } from './financedashboard/financedashboard.component';
 
 
@@ -26,6 +28,9 @@ import { FinancedashboardComponent } from './financedashboard/financedashboard.c
     jqxDockingLayoutModule,
     jqxInputModule,
     jqxTabsModule,
+    jqxComboBoxModule,
+    jqxNumberInputModule,
+    jqxDropDownListModule
   ],
   exports: [
     FinancedashboardComponent,

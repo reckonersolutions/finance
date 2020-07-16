@@ -3,32 +3,32 @@
     font-size: 14px;
 }
 
-table { 
-    box-sizing: border-box;   
-    width: 100%;          
+table {        
+    width: 100%;  
+    box-sizing: border-box;        
 }
 
 th, td {
     text-align: left;
     vertical-align: top;
-    padding: 0.2em;
-    position: relative;
+    padding: 2px;
 }
 
 .container {
-    margin: 0.2em;
-    padding: 0.2em;
+    margin: 2px;
+    padding: 2px;
 }
 
 .panel {
-    margin: 0.5em 0 0.5em;
-    border: 0.1em solid lightgray; 
-    border-radius: 0.2em;
+    margin: 5px 0 5px;
+    padding: 5px;
+    border: 1px solid lightgray; 
+    border-radius: 3px;
 }
 
 .compulsory-indicator {
     color: red;
-    margin-left: 0.2em;
+    margin-left: 2px;
 }
 
 /*applied to the window’s content*/
