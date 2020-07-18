@@ -4,6 +4,7 @@ import { jqxButtonComponent } from 'jqwidgets-ng/jqxbuttons';
 import { jqxInputComponent } from 'jqwidgets-ng/jqxinput';
 import { generatedata } from './../../../../assets/data/generatedata';
 import * as chartAccounts from './accounts.chart';
+import * as vatService from './accounts.vat';
 
 @Component({
   selector: 'app-forms-accounts',
@@ -61,7 +62,7 @@ export class AccountsComponent implements OnInit, AfterViewInit {
                 title: 'VAT Chart',
                 contentContainer: 'VATPanel',
                 initContent: () => {
-                  jqwidgets.createInstance('#gridVAT', 'jqxGrid', { width: '100%', height: '80%', 
+                  jqwidgets.createInstance('#gridVAT', 'jqxGrid', { source: vatService.dataAdapter, columns: vatService.columns, width: '100%', height: '80%', 
                                                                       altrows: true, editable: true, selectionmode: 'singlecell'});
                 }
                 
