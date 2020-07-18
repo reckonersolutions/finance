@@ -10,6 +10,8 @@ import { jqxTabsModule } from 'jqwidgets-ng/jqxtabs';
 import { jqxComboBoxModule } from 'jqwidgets-ng/jqxcombobox';
 import { jqxNumberInputModule } from 'jqwidgets-ng/jqxnumberinput';
 import { jqxDropDownListModule } from 'jqwidgets-ng/jqxdropdownlist';
+import { jqxTreeModule } from 'jqwidgets-ng/jqxtree';
+import { jqxGridModule } from 'jqwidgets-ng/jqxgrid';
 import { FinancedashboardComponent } from './financedashboard/financedashboard.component';
 
 
@@ -30,7 +32,9 @@ import { FinancedashboardComponent } from './financedashboard/financedashboard.c
     jqxTabsModule,
     jqxComboBoxModule,
     jqxNumberInputModule,
-    jqxDropDownListModule
+    jqxDropDownListModule,
+    jqxTreeModule,
+    jqxGridModule
   ],
   exports: [
     FinancedashboardComponent,

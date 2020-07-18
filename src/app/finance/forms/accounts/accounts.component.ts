@@ -2,6 +2,8 @@ import { Component, ViewChild, ElementRef, OnInit, AfterViewInit } from '@angula
 import { jqxWindowComponent } from 'jqwidgets-ng/jqxwindow';
 import { jqxButtonComponent } from 'jqwidgets-ng/jqxbuttons';
 import { jqxInputComponent } from 'jqwidgets-ng/jqxinput';
+import { generatedata } from './../../../../assets/data/generatedata';
+import * as chartAccounts from './accounts.chart';
 
 @Component({
   selector: 'app-forms-accounts',
@@ -17,7 +19,7 @@ export class AccountsComponent implements OnInit, AfterViewInit {
 
   height: number | string = 600;
   layout: any[] = this.generateLayout();
-
+    
   Change(event: any): void {
         console.log(event.code);    
   }
@@ -44,16 +46,25 @@ export class AccountsComponent implements OnInit, AfterViewInit {
             width: 100,
             allowClose: false,
             unpinnedWidth: 700,            
-            items:[
+            items:
+            [
               {
                 type: 'layoutPanel',
                 title: 'Chart of Accounts',
-                contentContainer: 'ChartPanel'
+                contentContainer: 'ChartPanel',
+                initContent: () => {
+                  jqwidgets.createInstance('#treeAccounts', 'jqxTree', {source: chartAccounts.source, height: '90%', width: '90%' });
+                }
               },
               {
                 type: 'layoutPanel',
                 title: 'VAT Chart',
-                contentContainer: 'VATPanel'
+                contentContainer: 'VATPanel',
+                initContent: () => {
+                  jqwidgets.createInstance('#gridVAT', 'jqxGrid', { width: '100%', height: '80%', 
+                                                                      altrows: true, editable: true, selectionmode: 'singlecell'});
+                }
+                
               },
               {
                 type: 'layoutPanel',

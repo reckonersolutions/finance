@@ -45,7 +45,7 @@
                                                   <div class="panel">
                                                   <table>                                                          
                                                       <tr>
-                                                        <td style="width: 160px;">Street:</td>
+                                                        <td class="label">Street:</td>
                                                         <td>
                                                             <jqxInput 
                                                             [width]="300" [height]="25" [source]="" [minLength]="1">
@@ -53,7 +53,7 @@
                                                         </td>
                                                       </tr>
                                                       <tr>
-                                                        <td>City:</td>
+                                                        <td >City:</td>
                                                         <td>
                                                             <jqxInput 
                                                             [width]="300" [height]="25" [source]="" [minLength]="1" [theme]="'black'">
@@ -105,7 +105,7 @@
                                                     <div class="panel">
                                                         <table>
                                                             <tr>
-                                                                <td style="width: 160px;">Payment Mode:</td>
+                                                                <td class="label">Payment Mode:</td>
                                                                 <td>
                                                                     <jqxDropDownList 
                                                                         [width]="200" [height]="25" [source]="['Cash','Credit']" [selectedIndex]="1">
@@ -115,13 +115,13 @@
                                                                 <td></td>
                                                             </tr>
                                                             <tr>
-                                                                <td style="width: 160px;">Credit Limit:</td>
+                                                                <td class="label">Credit Limit:</td>
                                                                 <td>
                                                                     <jqxNumberInput
                                                                         [width]="150" [height]="25" [symbol]="'AED'" [spinButtons]="false">
                                                                     </jqxNumberInput>
                                                                 </td>
-                                                                <td style="width: 160px;">Credit Days:</td>
+                                                                <td class="label">Credit Days:</td>
                                                                 <td>
                                                                     <jqxNumberInput #numericInput
                                                                         [width]="150" [height]="25" [spinButtons]="false" [digits]="3" [decimalDigits]="0">
@@ -133,7 +133,7 @@
                                                     <div class="panel">
                                                         <table>
                                                             <tr>
-                                                                <td style="width: 160px;">Allocation Required:</td>
+                                                                <td class="label">Allocation Required:</td>
                                                                 <td>
                                                                     <jqxDropDownList 
                                                                         [width]="200" [height]="25" [source]="['Yes','No']" [selectedIndex]="0">
@@ -161,7 +161,7 @@
                                                 <div class="panel">
                                                     <table>
                                                         <tr>
-                                                            <td style="width: 160px;">Account Name:</td>
+                                                            <td class="label">Account Name:</td>
                                                             <td>
                                                                 <jqxInput 
                                                                 [width]="300" [height]="25" [source]="" [minLength]="1">
@@ -197,7 +197,7 @@
                                                 <div class="panel">
                                                     <table>
                                                         <tr>
-                                                            <td style="width: 160px;">Branch:</td>
+                                                            <td class="label">Branch:</td>
                                                             <td>
                                                                 <jqxInput 
                                                                 [width]="300" [height]="25" [source]="" [minLength]="1">
@@ -252,10 +252,12 @@
                         
                                 <!--right tabbedGroup-->
                                 <div data-container="ChartPanel">
+                                    
+                                    <div id="treeAccounts" style="border: none"></div>
                                    
                                 </div>
-                                <div data-container="VATPanel">
-                                    
+                                <div data-container="VATPanel" style="padding:5px;">
+                                    <div id="gridVAT" style="border: none"></div>
                                 </div>
                                 <div data-container="HelpPanel" >
                                     

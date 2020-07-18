@@ -3,16 +3,17 @@
     font-size: 14px;
 }
 
-table {        
+table {      
+
     width: 100%;  
-    box-sizing: border-box;        
+    box-sizing: border-box; 
+
+    th, td {
+        text-align: left;
+        padding: 2px;
+    }       
 }
 
-th, td {
-    text-align: left;
-    vertical-align: top;
-    padding: 2px;
-}
 
 .container {
     margin: 2px;
@@ -30,6 +31,9 @@ th, td {
     color: red;
     margin-left: 2px;
 }
+
+
+
 
 /*applied to the window’s content*/
 .jqx-window-content {
